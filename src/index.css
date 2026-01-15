@@ -1,0 +1,73 @@
+:root {
+  /* Colors - Premium Palette */
+  --color-primary: #4F46E5;
+  /* Indigo 600 */
+  --color-primary-dark: #4338CA;
+  --color-primary-light: #818CF8;
+  --color-background: #F9FAFB;
+  /* Gray 50 */
+  --color-surface: #FFFFFF;
+  --color-text-main: #111827;
+  /* Gray 900 */
+  --color-text-secondary: #6B7280;
+  /* Gray 500 */
+  --color-accent: #10B981;
+  /* Emerald 500 */
+  --color-danger: #EF4444;
+  /* Red 500 */
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}

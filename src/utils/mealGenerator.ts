@@ -28,7 +28,7 @@ export const calculateTDEE = (profile: UserProfile): number => {
     return Math.round(bmr * activityMultipliers[profile.activityLevel]);
 };
 
-export const generateMealPlan = (profile: UserProfile, days: number = 30): DayPlan[] => {
+export const generateMealPlan = (_profile: UserProfile, days: number = 30): DayPlan[] => {
     // const tdee = calculateTDEE(profile);
     // Deficit for weight loss (approx 500 kcal)
     // const targetCalories = profile.currentWeight > profile.targetWeight ? tdee - 500 : tdee;

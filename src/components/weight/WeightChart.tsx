@@ -61,7 +61,7 @@ export const WeightChart: React.FC<WeightChartProps> = ({ data, range }) => {
                     <Tooltip
                         contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
                         itemStyle={{ color: '#4F46E5', fontWeight: 'bold' }}
-                        formatter={(value: number) => [`${value} kg`, '体重']}
+                        formatter={(value) => [`${value} kg`, '体重']}
                     />
                     <Line
                         type="monotone"

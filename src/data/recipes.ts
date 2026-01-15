@@ -1,4 +1,4 @@
-import type { Meal, Ingredient } from '../types';
+import type { Ingredient } from '../types';
 
 interface Recipe {
     name: string;
